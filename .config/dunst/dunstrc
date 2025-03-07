@@ -259,6 +259,8 @@
     frame_color = "#f2584b"
     timeout = 0
     override_pause_level = 60
+    background = "#c14a4a"
+    foreground = "#eee0b7"
     # Icon for notifications with critical urgency
 
 # Every section that isn't one of the above is interpreted as a rules to

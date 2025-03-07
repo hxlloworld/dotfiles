@@ -18,6 +18,8 @@
     ],
     "modules-right": [
         "tray",
+        "disk#icon",
+        "disk#text",
         "power-profiles-daemon",
         "wireplumber#icon",
         "wireplumber#text",
@@ -67,6 +69,16 @@
     "tray": {
         "icon-size": 16,
         "spacing": 10
+    },
+    "disk#icon": {
+        "format": " ",
+        "tooltip": "none",
+    },
+    "disk#text": {
+        "format": "{percentage_free}%",
+        "max-length": 15,
+        "tooltip": "none",
+        "unit": "GiB",
     },
     "backlight#icon": {
         // "device": "acpi_video1",

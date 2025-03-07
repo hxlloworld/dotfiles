@@ -60,10 +60,21 @@ tooltip label{
 #tray {
     padding-top: 2px;
 }
+#disk.icon {
+    padding-left: 8px;
+    font-size: 15px;
+    padding-top: 3px;
+    margin-right: -4px;
+}
+#disk.text {
+    font-size: 13px;
+    padding-top: 4px;
+    margin-right: 2px;
+}
 #power-profiles-daemon {
     padding-top: 2px;
+    margin-left: -1px;
     min-width: 28px;
-    padding-left: 4px;
 }
 #power-profiles-daemon.balanced {
     font-size: 22px;
@@ -102,16 +113,42 @@ padding-right: 2px;
 #battery {
 font-size: 13px;
 padding-right: 12px;
-border-radius: 0px 6px 6px 0px;
 border-left: 0px;
 padding-left: 8px;
+border-radius: 6px;
 }
 #battery.warning {
     color: @yellow;
 }
+#battery.warning:not(.charging) {
+    animation-name: blink-warning;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 #battery.critical {
     color: @red;
 }
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 #battery.charging {
     color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: @red;
+        color: @gruvbox0;
+    }
+}
+
+@keyframes blink-warning {
+    to {
+        background-color: @orange;
+        color: @gruvbox0;
+    }
 }
