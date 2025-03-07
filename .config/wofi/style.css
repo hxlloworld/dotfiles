@@ -1,8 +1,8 @@
 @import "/home/michelle/.config/waybar/colors.css";
 window {
-    background: none;
     font-family: FiraCodeNerdFont;
     font-size: 16px;
+    min-height: 100px;
 }
 #outer-box /* Container */ {
     padding: 6px;
