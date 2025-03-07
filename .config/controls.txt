@@ -1,3 +1,4 @@
+SUPER /:		Show this menu
 SUPER Q:		Kill active
 SUPER W: 		Firefox
 SUPER E: 		File explorer (thunar)
@@ -10,3 +11,7 @@ SUPER SHIFT L: 		Logout menu
 SUPER F5:		Brightness minimum
 SHIFT F5/F6:		Brightness +/- 1
 SHIFT M:		Night light
+PRINT:			Screenshot and copy to clipboard
+SUPDER PRINT:		Screenshot area and copy to clipboard
+F12:			Open menu(screenshot/screen record)
+
