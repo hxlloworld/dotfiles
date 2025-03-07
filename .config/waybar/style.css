@@ -1,0 +1,117 @@
+@import "colors.css";
+/* BACKGROUND0-SOFT, BACKGROUND0 (MEDIUM), BACKGROUND0-HARD */
+* {
+    font-family: FiraCodeNerdFont;
+    border-radius: 6px;
+    color: @gruvbox0;
+}
+
+window#waybar{
+    background-color: @surface2;
+}
+
+tooltip {
+    background: alpha(@surface2,0.5);
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+tooltip label{
+    font-size: 13px;
+    color: @fg1;
+}
+
+/* LEFT MODULES */
+#clock.clock1 {
+    padding-left: 12px;
+    font-size: 13px;
+    padding-right: 4px;
+    font-weight: bold;
+}
+#clock.2 {
+    font-size: 13px;
+    padding-right: 4px;
+    padding-top: 1px;
+}
+#custom-waybar-mpris {
+    padding-left: 4px;
+    font-size: 13px;
+}
+
+/* WORKSPACES */
+#workspaces button {
+    font-size: 16px;
+    transition-delay: 0s;
+    transition: 0.4s;
+}
+#workspaces button:hover {
+    color: alpha(@gruvbox0, 0.5);
+    background: alpha(@surface2,0);
+    text-shadow: 2px 2px @orange;
+
+}
+#workspaces button.active {
+    color: alpha(@gruvbox0, 0.4);
+    text-shadow: 3px 3px @orange;
+    background: radial-gradient(circle at 57% 57%, alpha(@orange, 0.8) 0, alpha(@orange, 0) 45%);
+}
+
+/* RIGHT MODULES */
+#tray {
+    padding-top: 2px;
+}
+#power-profiles-daemon {
+    padding-top: 2px;
+    min-width: 28px;
+    padding-left: 4px;
+}
+#power-profiles-daemon.balanced {
+    font-size: 22px;
+}
+#power-profiles-daemon.power-saver {
+padding-right: 2px;
+}
+#wireplumber.icon {
+    padding-top: 2px;
+    margin-right: -1px;
+}
+
+#wireplumber.text {
+    padding-top: 2px;
+    padding-right: 6px;
+    font-size: 13px;
+}
+#bluetooth.icon {
+    min-width: 20px;
+    font-size: 18px;
+    padding-left: 2px;
+}
+#bluetooth.text {
+    font-size: 13px;
+    margin-left: -2px;
+    padding-right: 4px;
+}
+#backlight.icon {
+    font-size: 16px;
+    margin-right: 2px;
+    margin-left: 4px; 
+}
+#backlight.text {
+    font-size: 13px;
+}
+#battery {
+font-size: 13px;
+padding-right: 12px;
+border-radius: 0px 6px 6px 0px;
+border-left: 0px;
+padding-left: 8px;
+}
+#battery.warning {
+    color: @yellow;
+}
+#battery.critical {
+    color: @red;
+}
+#battery.charging {
+    color: @green;
+}

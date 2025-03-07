@@ -1,0 +1,22 @@
+[general]
+import = ["~/.config/alacritty/colors.toml",]
+
+[window]
+dynamic_padding = true
+
+[font]
+normal = { family = "Aurulent Sans M Nerd Font Propo", style = "Regular" }
+size = 10
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+thickness = 0.15
+blink_interval = 500
+
+[colors]
+draw_bold_text_with_bright_colors = true
+cursor = { text = "CellBackground", cursor = "#d4be98" }
+
+[colors.primary]
+foreground = "#ddc7a1"
+background = "#282828"

@@ -1,0 +1,61 @@
+@import "/home/michelle/.config/waybar/colors.css";
+* {
+background-image: none;
+}
+
+window {
+    background-color: alpha(@surface2, 0.9);
+}
+
+button {
+    color: @gruvbox0;
+    background-color: @surface2;
+    border-style: solid;
+    background-size: 55%;
+    border-width: 2px;
+    margin: 4px;
+    border-color: alpha(@overlay0, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: alpha(@orange, 0.7);
+    outline-style: none;
+    background-size: 65%;
+}
+svg {
+    color: @gruvbox0;
+}
+
+#lock {
+background-image: url("/usr/share/wleave/icons/lock.svg"),
+url("/usr/local/share/wleave/icons/lock.svg");
+}
+
+#logout {
+background-image: url("/usr/share/wleave/icons/logout.svg"),
+url("/usr/local/share/wleave/icons/logout.svg");
+}
+
+#suspend {
+background-image: url("/usr/share/wleave/icons/suspend.svg"),
+url("/usr/local/share/wleave/icons/suspend.svg");
+}
+
+#hibernate {
+background-image: url("/usr/share/wleave/icons/hibernate.svg"),
+url("/usr/local/share/wleave/icons/hibernate.svg");
+}
+
+#shutdown {
+background-image: url("/usr/share/wleave/icons/shutdown.svg"),
+url("/usr/local/share/wleave/icons/shutdown.svg");
+}
+
+#reboot {
+background-image: url("/usr/share/wleave/icons/reboot.svg"),
+url("/usr/local/share/wleave/icons/reboot.svg");
+}

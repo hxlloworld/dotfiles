@@ -1,0 +1,29 @@
+{
+    "checksum": "e81d2e8591a3d2280e03443914107365",
+    "wallpaper": "/home/michelle/.config/wpg/wallpapers/yellow_kyoto.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#201812",
+        "foreground": "#c7c5c3",
+        "cursor": "#c7c5c3"
+    },
+    "colors": {
+        "color0": "#201812",
+        "color1": "#D8A76B",
+        "color2": "#FCC67C",
+        "color3": "#DEC26F",
+        "color4": "#E2B482",
+        "color5": "#48B687",
+        "color6": "#EDB678",
+        "color7": "#c7c5c3",
+        "color8": "#73665e",
+        "color9": "#D8A76B",
+        "color10": "#FCC67C",
+        "color11": "#DEC26F",
+        "color12": "#E2B482",
+        "color13": "#48B687",
+        "color14": "#EDB678",
+        "color15": "#c7c5c3"
+    }
+}

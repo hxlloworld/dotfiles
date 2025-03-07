@@ -1,0 +1,144 @@
+[
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+    "margin-top": 6,
+    "margin-left": 6,
+    "margin-right": 6,
+    "margin-bottom": -1,
+    "modules-left": [
+        "clock#clock1",
+        "clock#2",
+        "custom/waybar-mpris",
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "tray",
+        "power-profiles-daemon",
+        "wireplumber#icon",
+        "wireplumber#text",
+        "network",
+        "bluetooth#icon",
+	"bluetooth#text",
+        "backlight#icon",
+	"backlight#text",
+        "battery"
+    ],
+
+
+    /* Left modules */
+
+    "clock#clock1": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+    "clock#2": {
+        "format": "{:%a, %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+    "custom/waybar-mpris": {
+        "return-type": "json",
+        "exec": "waybar-mpris --autofocus --order SYMBOL:TITLE:ARTIST --play  --pause 󰏤",
+        "on-click": "waybar-mpris --send prev",
+        "on-click-right": "waybar-mpris --send next",
+        "on-click-middle": "waybar-mpris --send toggle",
+        "max-length": 60,
+    },
+
+
+    /* Workspaces */
+    "hyprland/workspaces": {
+        "show-special": true,
+        "format": "{icon}",
+        "format-icons": {
+            "default": "󰝣",
+            "spotify": "",
+            "discord": "",
+            "steam": "",
+        }
+    },
+
+
+    /* Right modules */
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "backlight#icon": {
+        // "device": "acpi_video1",
+        "format": "{icon}",
+        "tooltip": false,
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "backlight#text": {
+	"format": "{percent}%",
+	"tooltip": false
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": " {icon} {time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "=",
+        "power-saver": ""
+      }
+    },
+    "wireplumber#icon": {
+        "on-click": "pwvucontrol",
+        "format": "{icon} ",
+        "format-muted": "",
+        "max-volume": 150,
+        "scroll-step": 2.5,
+        "format-icons": [ "", ""]
+    },
+    "wireplumber#text": {
+        "on-click": "pwvucontrol",
+        "format": "{volume}%",
+        "max-volume": 150,
+        "scroll-step": 2.5
+    },
+    "network": {
+        "on-click": "alacritty --class floating -e nmtui",
+        "format-wifi": " ",
+        "format-ethernet": "",
+        "tooltip-format": "{essid} ",
+        "format-disconnected": "",
+    },
+    "bluetooth#icon": {
+        "on-click": "blueman-manager",
+        "format": "",
+        "tooltip-format": "{num_connections} connected",
+    },
+    "bluetooth#text": {
+	"on-click": "blueman-manager",
+	"format": "",
+	"tooltip-format": "{num_connections} connected",
+	"format-connected": "{device_alias}",
+	"max-length": 20,
+	"format-connected-battery": "{device_alias} {device_battery_percentage}",
+    }
+}
+
+
+]

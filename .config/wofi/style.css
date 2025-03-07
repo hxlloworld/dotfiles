@@ -1,0 +1,45 @@
+@import "/home/michelle/.config/waybar/colors.css";
+window {
+    background: none;
+    font-family: FiraCodeNerdFont;
+    font-size: 16px;
+}
+#outer-box /* Container */ {
+    padding: 6px;
+    border: 2px solid alpha(@orange, 0.5);
+    border-radius: 6px 6px 6px 6px;
+    background: alpha(@surface2, 0.97);
+}
+#input /* Search bar */ {
+    border-radius: 6px;
+    padding-top: 2px;
+    color: @gruvbox1;
+    background-color: alpha(@overlay2, 0.5);
+}
+#scroll /* Name of the scrolled window containing all the entries */ {
+    margin: 5px;
+}
+#inner-box /* Entries box */ {
+
+}
+#entry /* Entry */ {
+    border-radius: 6px;
+}
+#entry:selected {
+    background: alpha(@yellow, 0.5);
+    color: @gruvbox0;
+}
+#text /* Entry (again) */ {
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: @gruvbox0;
+}
+
+#expander-box {
+    padding-left: 2rem;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    background: alpha(@overlay2, 0.3)
+}

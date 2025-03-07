@@ -1,0 +1,10 @@
+normal_window=false
+style=/home/michelle/.config/wofi/style.css
+show=drun
+height=300px
+prompt=Search...
+term=alacritty
+insensitive=true
+lines=10
+location=top
+yoffset=4
