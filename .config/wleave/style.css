@@ -12,11 +12,12 @@ button {
     background-color: @surface2;
     border-style: solid;
     background-size: 55%;
-    border-width: 2px;
+    border-width: 3px;
     margin: 4px;
     border-color: alpha(@overlay0, 0.8);
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.4s;
 }
 
 button:focus,
@@ -24,7 +25,8 @@ button:active,
 button:hover {
     background-color: alpha(@orange, 0.7);
     outline-style: none;
-    background-size: 65%;
+    background-size: 70%;
+    transition: 0.4s;
 }
 svg {
     color: @gruvbox0;

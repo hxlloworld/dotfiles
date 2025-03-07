@@ -17,6 +17,9 @@ blink_interval = 500
 draw_bold_text_with_bright_colors = true
 cursor = { text = "CellBackground", cursor = "#d4be98" }
 
+[scrolling]
+history = 25000
+
 [colors.primary]
 foreground = "#ddc7a1"
 background = "#282828"
