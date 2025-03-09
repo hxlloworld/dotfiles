@@ -148,7 +148,7 @@ border-radius: 6px;
 
 @keyframes blink-warning {
     to {
-        background-color: @orange;
+        background-color: alpha(@orange, 0.8);
         color: @gruvbox0;
     }
 }

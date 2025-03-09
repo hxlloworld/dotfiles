@@ -72,13 +72,14 @@
     },
     "disk#icon": {
         "format": " ",
-        "tooltip": "none",
+        "tooltip-format": "{percentage_free}% free ({free})1",
     },
     "disk#text": {
         "format": "{percentage_free}%",
         "max-length": 15,
         "tooltip": "none",
         "unit": "GiB",
+        "tooltip-format": "{percentage_free}% free ({free})",
     },
     "backlight#icon": {
         // "device": "acpi_video1",
