@@ -20,15 +20,9 @@
         "tray",
         "disk#icon",
         "disk#text",
-        "power-profiles-daemon",
         "wireplumber#icon",
         "wireplumber#text",
         "network",
-        "bluetooth#icon",
-	"bluetooth#text",
-        "backlight#icon",
-	"backlight#text",
-        "battery"
     ],
 
 
@@ -72,49 +66,13 @@
     },
     "disk#icon": {
         "format": " ",
-        "tooltip": "none",
+        "tooltip-format": "{percentage_free}% free ({free})",
     },
     "disk#text": {
         "format": "{percentage_free}%",
         "max-length": 15,
-        "tooltip": "none",
+        "tooltip-format": "{percentage_free}% free ({free})",
         "unit": "GiB",
-    },
-    "backlight#icon": {
-        // "device": "acpi_video1",
-        "format": "{icon}",
-        "tooltip": false,
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "backlight#text": {
-	"format": "{percent}%",
-	"tooltip": false
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": " {icon} {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "=",
-        "power-saver": ""
-      }
     },
     "wireplumber#icon": {
         "on-click": "pwvucontrol",
@@ -137,20 +95,8 @@
         "tooltip-format": "{essid} ",
         "format-disconnected": "",
     },
-    "bluetooth#icon": {
-        "on-click": "blueman-manager",
-        "format": "",
-        "tooltip-format": "{num_connections} connected",
-    },
-    "bluetooth#text": {
-	"on-click": "blueman-manager",
-	"format": "",
-	"tooltip-format": "{num_connections} connected",
-	"format-connected": "{device_alias}",
-	"max-length": 20,
-	"format-connected-battery": "{device_alias} {device_battery_percentage}",
-    }
 }
 
 
 ]
+

@@ -5,6 +5,7 @@ background-image: none;
 
 window {
     background-color: alpha(@surface2, 0.9);
+    padding: 10rem;
 }
 
 button {
@@ -27,10 +28,6 @@ button:hover {
     outline-style: none;
     background-size: 70%;
 }
-svg {
-    color: @gruvbox0;
-}
-
 #lock {
 background-image: url("/usr/share/wleave/icons/lock.svg"),
 url("/usr/local/share/wleave/icons/lock.svg");
@@ -59,4 +56,11 @@ url("/usr/local/share/wleave/icons/shutdown.svg");
 #reboot {
 background-image: url("/usr/share/wleave/icons/reboot.svg"),
 url("/usr/local/share/wleave/icons/reboot.svg");
+}
+#windows {
+    background-image: url("windows.svg");
+    background-size: 55%;
+}
+#windows:hover, #windows:active, #windows:focus {
+    background-size: 65%;
 }

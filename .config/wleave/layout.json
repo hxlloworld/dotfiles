@@ -22,3 +22,10 @@
     "text" : "",
     "keybind" : "r"
 }
+
+{
+    "label" : "windows",
+    "action" : "systemctl reboot --boot-loader-entry=windows.conf",
+    "text" : "",
+    "keybind" : "w"
+}
