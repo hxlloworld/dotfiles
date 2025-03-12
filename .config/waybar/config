@@ -76,18 +76,22 @@
         "unit": "GiB",
     },
     "wireplumber#icon": {
-        "on-click": "pwvucontrol",
+        "on-click": "pavucontrol",
         "format": "{icon} ",
         "format-muted": "",
         "max-volume": 150,
-        "scroll-step": 2.5,
+        "scroll-step": 3, 
+	"on-scroll-down": "pamixer -d '3'",
+	"on-scroll-up": "pamixer -i '3'",
         "format-icons": [ "", ""]
     },
     "wireplumber#text": {
-        "on-click": "pwvucontrol",
+        "on-click": "pavucontrol",
         "format": "{volume}%",
         "max-volume": 150,
-        "scroll-step": 2.5
+        "scroll-step": 3,
+	"on-scroll-up": "pamixer --increase '3'",
+	"on-scroll-down": "pamixer -d '3'"
     },
     "network": {
         "on-click": "alacritty --class floating -e nmtui",
@@ -100,4 +104,3 @@
 
 
 ]
-

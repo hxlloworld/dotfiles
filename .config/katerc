@@ -39,6 +39,9 @@ Tab Double Click New Document=true
 Tab Middle Click Close Document=true
 Tabbar Tab Limit=0
 
+[KDE]
+widgetStyle=kvantum-dark
+
 [KTextEditor Renderer]
 Animate Bracket Matching=false
 Auto Color Theme Selection=false
@@ -122,6 +125,7 @@ SetEditor=false
 
 [MainWindow]
 1366x768 screen: Window-Maximized=true
+2 screens: Window-Maximized=true
 
 [filetree]
 editShade=183,220,246

@@ -59,8 +59,8 @@ url("/usr/local/share/wleave/icons/reboot.svg");
 }
 #windows {
     background-image: url("windows.svg");
-    background-size: 55%;
+    background-size: 50%;
 }
 #windows:hover, #windows:active, #windows:focus {
-    background-size: 65%;
+    background-size: 60%;
 }
