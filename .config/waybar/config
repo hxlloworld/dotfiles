@@ -61,6 +61,7 @@
             "spotify": "",
             "discord": "",
             "steam": "",
+            "game": ""
         }
     },
 
@@ -133,10 +134,10 @@
     },
     "network": {
         "on-click": "alacritty --class floating -e nmtui",
-        "format-wifi": " ",
+        "format-wifi": "󰤨 ",
         "format-ethernet": "",
         "tooltip-format": "{essid} ",
-        "format-disconnected": "",
+        "format-disconnected": "󰤭 ",
     },
     "bluetooth#icon": {
         "on-click": "blueman-manager",
